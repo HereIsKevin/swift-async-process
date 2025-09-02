@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-  name: "swift-sdk-generator",
+  name: "swift-async-process",
   platforms: [.macOS(.v13)],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
-    .executable(
-      name: "swift-sdk-generator",
-      targets: ["GeneratorCLI"]
+    .library(
+      name: "AsyncProcess",
+      targets: ["AsyncProcess"]
     )
   ],
   targets: [
